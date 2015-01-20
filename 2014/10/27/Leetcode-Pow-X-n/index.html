@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Yifu&#39;s tech blog</title>
+  <title>Leetcode: Pow(X,n) | Yifu&#39;s tech blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="How to Insert Mathematical Formula in Markdown
-Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something l">
+  <meta name="description" content="Leetcode: Pow(X,n)
+Naive thinking is just multiple X for n times, but this is absolutely not this question wants.
+We need to make use of the calculation result in previous steps, since X^n = X^n/2 * X">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Yifu's tech blog">
-<meta property="og:url" content="http://wangyifu.github.io/myblog/myblog/2015/01/12/how_to_insert_mathematical_formula_in_markdown/">
+<meta property="og:title" content="Leetcode: Pow(X,n)">
+<meta property="og:url" content="http://wangyifu.github.io/myblog/myblog/2014/10/27/Leetcode-Pow-X-n/">
 <meta property="og:site_name" content="Yifu's tech blog">
-<meta property="og:description" content="How to Insert Mathematical Formula in Markdown
-Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something l">
-<meta property="og:image" content="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
-<meta property="og:image" content="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
+<meta property="og:description" content="Leetcode: Pow(X,n)
+Naive thinking is just multiple X for n times, but this is absolutely not this question wants.
+We need to make use of the calculation result in previous steps, since X^n = X^n/2 * X">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yifu's tech blog">
-<meta name="twitter:description" content="How to Insert Mathematical Formula in Markdown
-Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something l">
+<meta name="twitter:title" content="Leetcode: Pow(X,n)">
+<meta name="twitter:description" content="Leetcode: Pow(X,n)
+Naive thinking is just multiple X for n times, but this is absolutely not this question wants.
+We need to make use of the calculation result in previous steps, since X^n = X^n/2 * X">
 
   
     <link rel="alternative" href="/atom.xml" title="Yifu&#39;s tech blog" type="application/atom+xml">
@@ -163,14 +164,20 @@ Markdown is the best tool for me to write blog and articles. However, it does no
 		</header>				
 	</div>
 </nav>
-      <article id="post-how_to_insert_mathematical_formula_in_markdown" class="article article-type-post" itemscope itemprop="blogPost">
+      <article id="post-Leetcode-Pow-X-n" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/myblog/2015/01/12/how_to_insert_mathematical_formula_in_markdown/" class="article-date">
-  	<time datetime="2015-01-12T22:34:57.000Z" itemprop="datePublished">Jan 12 2015</time>
+      <a href="/myblog/2014/10/27/Leetcode-Pow-X-n/" class="article-date">
+  	<time datetime="2014-10-27T18:04:34.000Z" itemprop="datePublished">Oct 27 2014</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/myblog/categories/learning/">learning</a>
+  </div>
+
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblog/tags/leetcode/">leetcode</a></li></ul>
+
     </div>
   
   <div class="article-inner">
@@ -178,35 +185,23 @@ Markdown is the best tool for me to write blog and articles. However, it does no
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Leetcode: Pow(X,n)
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="How_to_Insert_Mathematical_Formula_in_Markdown">How to Insert Mathematical Formula in Markdown</h1>
-<p>Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something like algorithm proof or math related topic. After some search, I found some solutions:</p>
-<h2 id="Method_1-_Using_Google_Chart_Server">Method 1. Using Google Chart Server</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img <span class="variable">src=</span><span class="string">"http://chart.googleapis.com/chart?cht=tx&chl=Insert Latex formula here"</span> <span class="variable">style=</span><span class="string">"border:none;"</span>&gt;</div></pre></td></tr></table></figure>
-
-<p>An example:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"</span> style=<span class="string">"border:none;"</span>&gt;</div></pre></td></tr></table></figure>
-
-<p>Result:<br><img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
-<h2 id="Method_2-_Using_forkosh_Server">Method 2. Using forkosh Server</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://www.forkosh.com/mathtex.cgi? Insert Latex formula here"</span>&gt;</span></div></pre></td></tr></table></figure>
-
-<p>For example</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"</span>&gt;</div></pre></td></tr></table></figure>
-
-<p>Result:  <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"></p>
-<h2 id="Method_3-_Using_MathJax_Engine">Method 3. Using MathJax Engine</h2>
-<p>Do you admire those beautiful formula on Stackoverflow? Try this engine! It is also easy to use on Markdown.</p>
-<p>Firstly, add this script in article:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></pre></td></tr></table></figure>
-
-<p>Then, use LaTex syntex to write formula, <code>$$formula$$</code> shows block of formula. As for inline formula, unlike <code>\(formula\)</code>, we need to use <code>\\(formula\\)</code> since <code>\</code> is escape character in Markdown. For example:</p>
-<p>Block of formula</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="formula">$$x=<span class="command">\frac</span><span class="special">{</span>-b<span class="command">\pm</span><span class="command">\sqrt</span><span class="special">{</span>b^2-4ac<span class="special">}</span><span class="special">}</span><span class="special">{</span>2a<span class="special">}</span>$$</span></div></pre></td></tr></table></figure>
-
-<p>In-line formula</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="command">\(</span>x=<span class="command">\frac</span><span class="special">{</span>-b<span class="command">\pm</span><span class="command">\sqrt</span><span class="special">{</span>b^2-4ac<span class="special">}</span><span class="special">}</span><span class="special">{</span>2a<span class="special">}</span><span class="command">\)</span></div></pre></td></tr></table></figure>
+        <h2 id="Leetcode:_Pow(X,n)">Leetcode: Pow(X,n)</h2>
+<p>Naive thinking is just multiple X for n times, but this is absolutely not this question wants.</p>
+<p>We need to make use of the calculation result in previous steps, since <code>X^n = X^n/2 * X^n/2</code></p>
+<p>What if n is odd? Then we need to multiple X one more times.</p>
+<figure class="highlight Java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</div><div class="line">    <span class="keyword">public</span> <span class="keyword">double</span> <span class="title">pow</span>(<span class="keyword">double</span> x, <span class="keyword">int</span> n) {</div><div class="line">      <span class="keyword">double</span> result = <span class="number">1.0</span>;</div><div class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i = n; i != <span class="number">0</span>; i /= <span class="number">2</span>, x *= x) {</div><div class="line">          <span class="keyword">if</span>( i % <span class="number">2</span> != <span class="number">0</span> ) {</div><div class="line">              result *= x;</div><div class="line">          }</div><div class="line">      }</div><div class="line">      <span class="keyword">return</span> n &lt; <span class="number">0</span> ? <span class="number">1.0</span> / result : result;</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
 
 
       
@@ -216,18 +211,18 @@ Markdown is the best tool for me to write blog and articles. However, it does no
     
 <nav id="article-nav">
   
-    <a href="/myblog/2015/01/19/linear_algebra_for_novice_data_scientists/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/myblog/2014/11/15/strStr-Sunday-Algorithm/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">&lt;</strong>
       <div class="article-nav-title">
         
-          (no title)
+          strStr - Sunday Algorithm
         
       </div>
     </a>
   
   
-    <a href="/myblog/2014/11/15/strStr-Sunday-Algorithm/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">strStr - Sunday Algorithm</div>
+    <a href="/myblog/2014/10/18/Building-Vector-Space-Retrival-Model-Using-UIMA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Building Vector Space Retrival Model Using UIMA</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   

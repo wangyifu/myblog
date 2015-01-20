@@ -5,20 +5,24 @@
   
   <title>Yifu&#39;s tech blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="How to Insert Mathematical Formula in Markdown
-Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something l">
+  <meta name="description" content="Linear Algebra for Novice Data Scientists
+
+Introduction
+This is a brief summary of linear algebra concepts needed for machine learning study. It will cost about 1 hour to go though if you had studied">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Yifu's tech blog">
-<meta property="og:url" content="http://wangyifu.github.io/myblog/myblog/2015/01/12/how_to_insert_mathematical_formula_in_markdown/">
+<meta property="og:url" content="http://wangyifu.github.io/myblog/myblog/2015/01/19/linear_algebra_for_novice_data_scientists/">
 <meta property="og:site_name" content="Yifu's tech blog">
-<meta property="og:description" content="How to Insert Mathematical Formula in Markdown
-Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something l">
-<meta property="og:image" content="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
-<meta property="og:image" content="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
+<meta property="og:description" content="Linear Algebra for Novice Data Scientists
+
+Introduction
+This is a brief summary of linear algebra concepts needed for machine learning study. It will cost about 1 hour to go though if you had studied">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yifu's tech blog">
-<meta name="twitter:description" content="How to Insert Mathematical Formula in Markdown
-Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something l">
+<meta name="twitter:description" content="Linear Algebra for Novice Data Scientists
+
+Introduction
+This is a brief summary of linear algebra concepts needed for machine learning study. It will cost about 1 hour to go though if you had studied">
 
   
     <link rel="alternative" href="/atom.xml" title="Yifu&#39;s tech blog" type="application/atom+xml">
@@ -163,11 +167,11 @@ Markdown is the best tool for me to write blog and articles. However, it does no
 		</header>				
 	</div>
 </nav>
-      <article id="post-how_to_insert_mathematical_formula_in_markdown" class="article article-type-post" itemscope itemprop="blogPost">
+      <article id="post-linear_algebra_for_novice_data_scientists" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/myblog/2015/01/12/how_to_insert_mathematical_formula_in_markdown/" class="article-date">
-  	<time datetime="2015-01-12T22:34:57.000Z" itemprop="datePublished">Jan 12 2015</time>
+      <a href="/myblog/2015/01/19/linear_algebra_for_novice_data_scientists/" class="article-date">
+  	<time datetime="2015-01-20T03:11:50.000Z" itemprop="datePublished">Jan 19 2015</time>
 </a>
       
       
@@ -180,34 +184,52 @@ Markdown is the best tool for me to write blog and articles. However, it does no
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="How_to_Insert_Mathematical_Formula_in_Markdown">How to Insert Mathematical Formula in Markdown</h1>
-<p>Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something like algorithm proof or math related topic. After some search, I found some solutions:</p>
-<h2 id="Method_1-_Using_Google_Chart_Server">Method 1. Using Google Chart Server</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img <span class="variable">src=</span><span class="string">"http://chart.googleapis.com/chart?cht=tx&chl=Insert Latex formula here"</span> <span class="variable">style=</span><span class="string">"border:none;"</span>&gt;</div></pre></td></tr></table></figure>
-
-<p>An example:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"</span> style=<span class="string">"border:none;"</span>&gt;</div></pre></td></tr></table></figure>
-
-<p>Result:<br><img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
-<h2 id="Method_2-_Using_forkosh_Server">Method 2. Using forkosh Server</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://www.forkosh.com/mathtex.cgi? Insert Latex formula here"</span>&gt;</span></div></pre></td></tr></table></figure>
-
-<p>For example</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"</span>&gt;</div></pre></td></tr></table></figure>
-
-<p>Result:  <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"></p>
-<h2 id="Method_3-_Using_MathJax_Engine">Method 3. Using MathJax Engine</h2>
-<p>Do you admire those beautiful formula on Stackoverflow? Try this engine! It is also easy to use on Markdown.</p>
-<p>Firstly, add this script in article:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></pre></td></tr></table></figure>
-
-<p>Then, use LaTex syntex to write formula, <code>$$formula$$</code> shows block of formula. As for inline formula, unlike <code>\(formula\)</code>, we need to use <code>\\(formula\\)</code> since <code>\</code> is escape character in Markdown. For example:</p>
-<p>Block of formula</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="formula">$$x=<span class="command">\frac</span><span class="special">{</span>-b<span class="command">\pm</span><span class="command">\sqrt</span><span class="special">{</span>b^2-4ac<span class="special">}</span><span class="special">}</span><span class="special">{</span>2a<span class="special">}</span>$$</span></div></pre></td></tr></table></figure>
-
-<p>In-line formula</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="command">\(</span>x=<span class="command">\frac</span><span class="special">{</span>-b<span class="command">\pm</span><span class="command">\sqrt</span><span class="special">{</span>b^2-4ac<span class="special">}</span><span class="special">}</span><span class="special">{</span>2a<span class="special">}</span><span class="command">\)</span></div></pre></td></tr></table></figure>
-
+        <p><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></p>
+<h1 id="Linear_Algebra_for_Novice_Data_Scientists">Linear Algebra for Novice Data Scientists</h1>
+<hr>
+<h2 id="Introduction">Introduction</h2>
+<p>This is a brief summary of linear algebra concepts needed for machine learning study. It will cost about 1 hour to go though if you had studied it before.</p>
+<h2 id="Basic_concepts">Basic concepts</h2>
+<p>By \(A\in\mathbb{R}^{m*n}\) we denote a matrix with m rows and n columns</p>
+<p>By \(x\in\mathbb{R}^n\)  we denote a vector with n entries</p>
+<p>\(a_{ij}\) means the entry of A in ith row and jth column</p>
+<h2 id="Matrix_Multiplication">Matrix Multiplication</h2>
+<p>For matrix \(A\in\mathbb{R}^{m*n}\) , \(B\in\mathbb{R}^{n*p}\), their product is the matrix \(C = AB \in \mathbb{R}^{m*p}\), where \(C_{ij}=\sum\limits_{k=1}^nA_{ik}B_{kj}\).</p>
+<h2 id="Operations_and_Properties">Operations and Properties</h2>
+<ul>
+<li>Identity Matrix: square matrix with ones in diagonal and zeros everywhere else. AI = A = IA</li>
+<li>Transpose: a matrix results from “flipping” rows and columns. \((A^T)^T = A, (AB)^T = B^TA^T, (A+B)^T=A^T+B^T\)</li>
+<li>Symmetric Matrices: A matrix is symmetric if \(A = A^T\)</li>
+<li>The Trace: Sum of diagonal elements in the square matrix: \(trA=\sum\limits_{i=1}^nA_{ii}\). \(trA=trA^T, tr(A+B)=trA+trB, trAB = trBA\)</li>
+<li><p>Norms: norm of a vector \(\Vert x\Vert\) measures the “length” of vector. </p>
+<ul>
+<li>\({\Vert x \Vert}_2 = \sqrt{\sum\limits_{i=1}^n x_i^2}\) </li>
+<li>\({\Vert x \Vert}_1 = \sum\limits_{i=1}^n |x_i|\)</li>
+<li><p>\({\Vert x \Vert}_p = (\sum\limits_{i=1}^n |x_i|^p)^{1/p}\)</p>
+</li>
+<li><p>\({\Vert A \Vert}<em>F = \sqrt{\sum\limits\</em>{i=1}^m\sum\limits_{j=1}^n A_{ij}^2} = \sqrt{tr(A^TA)}\)</p>
+</li>
+</ul>
+</li>
+<li>Linear Independence: A set of vectors {x1, x2, . . . xn} is said to be (linearly) independent if no vector can<br>be represented as a linear combination of the remaining vectors.  </li>
+<li>Rank: Size of the largest subset of independent columns or rows in A. row rank is equals to column rank.</li>
+<li>The Inverse: \(A^{-1}A =AA^{-1} = I\). A is invertible or non-singular if \(A^{-1}\) exists.<ul>
+<li>\((AB)^{-1} = B^{-1}A^{-1}\)</li>
+<li>\((A^{-1})^T = (A^T)^{-1}\)</li>
+</ul>
+</li>
+<li>Orthogonal Matrices: Two vectors \(x, y \in\mathbb{R}^{n}\) are orthogonal if \(x^Ty = 0\). A matrix is orthogonal if all its columns are orthgonal to each other and normalized. In other way, \(U^TU=I=UU^T\)</li>
+</ul>
+<h2 id="The_Determinant">The Determinant</h2>
+<p>Calculation: Sum of main diagonals minus sum of counter-diagonals</p>
+<p>properties:</p>
+<ul>
+<li>\(|A|=|A^T|\)</li>
+<li>\(|AB|=|A||B|\)</li>
+<li>For \(A\in\mathbb{R}^{n*n},|A|=0\) if and only if A is singular</li>
+<li>For \(A\in\mathbb{R}^{n*n}\) and A is not singular, \(|A^{-1}=1/|A|\)</li>
+</ul>
+<p>to be continued…</p>
 
       
     </div>
@@ -216,18 +238,9 @@ Markdown is the best tool for me to write blog and articles. However, it does no
     
 <nav id="article-nav">
   
-    <a href="/myblog/2015/01/19/linear_algebra_for_novice_data_scientists/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">&lt;</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/myblog/2014/11/15/strStr-Sunday-Algorithm/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">strStr - Sunday Algorithm</div>
+    <a href="/myblog/2015/01/12/how_to_insert_mathematical_formula_in_markdown/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Yifu's tech blog]]></title>
+  
+  <link href="/myblog/atom.xml" rel="self"/>
+  <link href="http://wangyifu.github.io/myblog/"/>
+  <updated>2015-01-20T03:11:57.630Z</updated>
+  <id>http://wangyifu.github.io/myblog/</id>
+  
+  <author>
+    <name><![CDATA[Yifu Wang]]></name>
+    <email><![CDATA[yifuw@andrew.cmu.edu]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://wangyifu.github.io/myblog/2015/01/19/linear_algebra_for_novice_data_scientists/"/>
+    <id>http://wangyifu.github.io/myblog/2015/01/19/linear_algebra_for_novice_data_scientists/</id>
+    <published>2015-01-20T03:11:50.000Z</published>
+    <updated>2015-01-20T03:11:08.000Z</updated>
+    <content type="html"><![CDATA[<p><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></p>
+<h1 id="Linear_Algebra_for_Novice_Data_Scientists">Linear Algebra for Novice Data Scientists</h1>
+<hr>
+<h2 id="Introduction">Introduction</h2>
+<p>This is a brief summary of linear algebra concepts needed for machine learning study. It will cost about 1 hour to go though if you had studied it before.</p>
+<h2 id="Basic_concepts">Basic concepts</h2>
+<p>By \(A\in\mathbb{R}^{m*n}\) we denote a matrix with m rows and n columns</p>
+<p>By \(x\in\mathbb{R}^n\)  we denote a vector with n entries</p>
+<p>\(a_{ij}\) means the entry of A in ith row and jth column</p>
+<h2 id="Matrix_Multiplication">Matrix Multiplication</h2>
+<p>For matrix \(A\in\mathbb{R}^{m*n}\) , \(B\in\mathbb{R}^{n*p}\), their product is the matrix \(C = AB \in \mathbb{R}^{m*p}\), where \(C_{ij}=\sum\limits_{k=1}^nA_{ik}B_{kj}\).</p>
+<h2 id="Operations_and_Properties">Operations and Properties</h2>
+<ul>
+<li>Identity Matrix: square matrix with ones in diagonal and zeros everywhere else. AI = A = IA</li>
+<li>Transpose: a matrix results from “flipping” rows and columns. \((A^T)^T = A, (AB)^T = B^TA^T, (A+B)^T=A^T+B^T\)</li>
+<li>Symmetric Matrices: A matrix is symmetric if \(A = A^T\)</li>
+<li>The Trace: Sum of diagonal elements in the square matrix: \(trA=\sum\limits_{i=1}^nA_{ii}\). \(trA=trA^T, tr(A+B)=trA+trB, trAB = trBA\)</li>
+<li><p>Norms: norm of a vector \(\Vert x\Vert\) measures the “length” of vector. </p>
+<ul>
+<li>\({\Vert x \Vert}_2 = \sqrt{\sum\limits_{i=1}^n x_i^2}\) </li>
+<li>\({\Vert x \Vert}_1 = \sum\limits_{i=1}^n |x_i|\)</li>
+<li><p>\({\Vert x \Vert}_p = (\sum\limits_{i=1}^n |x_i|^p)^{1/p}\)</p>
+</li>
+<li><p>\({\Vert A \Vert}<em>F = \sqrt{\sum\limits\</em>{i=1}^m\sum\limits_{j=1}^n A_{ij}^2} = \sqrt{tr(A^TA)}\)</p>
+</li>
+</ul>
+</li>
+<li>Linear Independence: A set of vectors {x1, x2, . . . xn} is said to be (linearly) independent if no vector can<br>be represented as a linear combination of the remaining vectors.  </li>
+<li>Rank: Size of the largest subset of independent columns or rows in A. row rank is equals to column rank.</li>
+<li>The Inverse: \(A^{-1}A =AA^{-1} = I\). A is invertible or non-singular if \(A^{-1}\) exists.<ul>
+<li>\((AB)^{-1} = B^{-1}A^{-1}\)</li>
+<li>\((A^{-1})^T = (A^T)^{-1}\)</li>
+</ul>
+</li>
+<li>Orthogonal Matrices: Two vectors \(x, y \in\mathbb{R}^{n}\) are orthogonal if \(x^Ty = 0\). A matrix is orthogonal if all its columns are orthgonal to each other and normalized. In other way, \(U^TU=I=UU^T\)</li>
+</ul>
+<h2 id="The_Determinant">The Determinant</h2>
+<p>Calculation: Sum of main diagonals minus sum of counter-diagonals</p>
+<p>properties:</p>
+<ul>
+<li>\(|A|=|A^T|\)</li>
+<li>\(|AB|=|A||B|\)</li>
+<li>For \(A\in\mathbb{R}^{n*n},|A|=0\) if and only if A is singular</li>
+<li>For \(A\in\mathbb{R}^{n*n}\) and A is not singular, \(|A^{-1}=1/|A|\)</li>
+</ul>
+<p>to be continued…</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></p>
+<h1 id="Linear_Algebra]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://wangyifu.github.io/myblog/2015/01/12/how_to_insert_mathematical_formula_in_markdown/"/>
+    <id>http://wangyifu.github.io/myblog/2015/01/12/how_to_insert_mathematical_formula_in_markdown/</id>
+    <published>2015-01-12T22:34:57.000Z</published>
+    <updated>2015-01-12T22:34:57.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="How_to_Insert_Mathematical_Formula_in_Markdown">How to Insert Mathematical Formula in Markdown</h1>
+<p>Markdown is the best tool for me to write blog and articles. However, it does not support formula editing, so I had some trouble when writing something like algorithm proof or math related topic. After some search, I found some solutions:</p>
+<h2 id="Method_1-_Using_Google_Chart_Server">Method 1. Using Google Chart Server</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img <span class="variable">src=</span><span class="string">"http://chart.googleapis.com/chart?cht=tx&chl=Insert Latex formula here"</span> <span class="variable">style=</span><span class="string">"border:none;"</span>&gt;</div></pre></td></tr></table></figure>
+
+<p>An example:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"</span> style=<span class="string">"border:none;"</span>&gt;</div></pre></td></tr></table></figure>
+
+<p>Result:<br><img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
+<h2 id="Method_2-_Using_forkosh_Server">Method 2. Using forkosh Server</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://www.forkosh.com/mathtex.cgi? Insert Latex formula here"</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>For example</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"</span>&gt;</div></pre></td></tr></table></figure>
+
+<p>Result:  <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"></p>
+<h2 id="Method_3-_Using_MathJax_Engine">Method 3. Using MathJax Engine</h2>
+<p>Do you admire those beautiful formula on Stackoverflow? Try this engine! It is also easy to use on Markdown.</p>
+<p>Firstly, add this script in article:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>Then, use LaTex syntex to write formula, <code>$$formula$$</code> shows block of formula. As for inline formula, unlike <code>\(formula\)</code>, we need to use <code>\\(formula\\)</code> since <code>\</code> is escape character in Markdown. For example:</p>
+<p>Block of formula</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="formula">$$x=<span class="command">\frac</span><span class="special">{</span>-b<span class="command">\pm</span><span class="command">\sqrt</span><span class="special">{</span>b^2-4ac<span class="special">}</span><span class="special">}</span><span class="special">{</span>2a<span class="special">}</span>$$</span></div></pre></td></tr></table></figure>
+
+<p>In-line formula</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="command">\(</span>x=<span class="command">\frac</span><span class="special">{</span>-b<span class="command">\pm</span><span class="command">\sqrt</span><span class="special">{</span>b^2-4ac<span class="special">}</span><span class="special">}</span><span class="special">{</span>2a<span class="special">}</span><span class="command">\)</span></div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="How_to_Insert_Mathematical_Formula_in_Markdown">How to Insert Mathematical Formula in Markdown</h1>
+<p>Markdown is the best tool for]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[strStr - Sunday Algorithm]]></title>
+    <link href="http://wangyifu.github.io/myblog/2014/11/15/strStr-Sunday-Algorithm/"/>
+    <id>http://wangyifu.github.io/myblog/2014/11/15/strStr-Sunday-Algorithm/</id>
+    <published>2014-11-15T19:20:58.000Z</published>
+    <updated>2014-11-15T19:57:44.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Leetcode:_strStr_-_SUNDAY_algorithm">Leetcode: strStr - SUNDAY algorithm</h2>
+<a id="more"></a><br>Sunday algorithm is a variation of <a href="http://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm" target="_blank" rel="external">BM algorithm</a>, which is used broadly in string comparation, and is faster and easier than <a href="http://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm" target="_blank" rel="external">KMP algorithm</a>(usually 3-5 times!).<br><a id="more"></a>
+
+<p>Imagine we want to find “search” in string “substringsearchingalgorithm”. At beginning, we align substring with text:</p>
+<blockquote>
+<p>substringsearchingalgorithm<br>search<br>^</p>
+</blockquote>
+<p>Then we will find mismatch at second character, so we need to shift substring. But how much should we shift? That is the difference of string search algorithms. The naive algorithm is just shift 1 character; KMP uses the information of already matched part; BM algorithm uses reverse comparation. Here, I will introduce a new method, which is look at the followed character of current substring(character ‘i’ in example above).</p>
+<p>Obviously, no mattch how much we shift, this character will participate in next comparation. In other words, if we matched in next step, this character must in our substring. So, we can <strong>shift substring to make it align with the rightmost same character</strong>. As for our example, there does not exist ‘i’ in substring “search”, which means we can jump a long distance, begin compare from the character next of ‘i’, as below:</p>
+<blockquote>
+<p>substringsearchingalgorithm<br>      search<br>　　　　   ^</p>
+</blockquote>
+<p>In this round of comparation, the first charater is not match. Look at the next character behind substring, which is ‘c’, occurs in the last but one place of substring. So we shift substring for 2 characters to make these two ‘c’ aligned.</p>
+<blockquote>
+<p>substringsearchingalgorithm<br>        search<br>　　　　     ^</p>
+</blockquote>
+<p>Hah! This time we find the match! Look back the whole proces, we only take 3 steps to find the matched string.</p>
+<p>Java code:</p>
+<figure class="highlight Java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">strStr</span>(String haystack, String needle) {</div><div class="line">  <span class="keyword">if</span>(needle==<span class="keyword">null</span> || needle.length()==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">  <span class="keyword">if</span>(haystack == <span class="keyword">null</span> || needle.length() &gt; haystack.length()) <span class="keyword">return</span> -<span class="number">1</span>;</div><div class="line">      </div><div class="line">  <span class="keyword">char</span>[] mainArr = haystack.toCharArray();</div><div class="line">  <span class="keyword">char</span>[] targetArr = needle.toCharArray();</div><div class="line">  <span class="keyword">int</span> i = <span class="number">0</span>;</div><div class="line">  <span class="keyword">while</span>(i&lt;mainArr.length){</div><div class="line">    <span class="keyword">int</span> j = <span class="number">0</span>;</div><div class="line">    <span class="keyword">while</span>(j &lt; targetArr.length && i+j &lt; mainArr.length && mainArr[i+j] == targetArr[j]){ <span class="comment">//match</span></div><div class="line">      j++;</div><div class="line">    }</div><div class="line">    <span class="keyword">if</span>(j == targetArr.length) <span class="keyword">return</span> i;</div><div class="line">    <span class="keyword">else</span> { <span class="comment">//shift</span></div><div class="line">      <span class="keyword">if</span>(i+targetArr.length &lt; mainArr.length){</div><div class="line">        <span class="keyword">for</span>(j = targetArr.length-<span class="number">1</span>; j &gt;= <span class="number">0</span>; j--){</div><div class="line">	  <span class="keyword">if</span>(targetArr[j] == mainArr[i+targetArr.length]){</div><div class="line">	    <span class="keyword">break</span>;</div><div class="line">	  }</div><div class="line">        }</div><div class="line">      }</div><div class="line">      i += targetArr.length-j;</div><div class="line">    }</div><div class="line">  }</div><div class="line">  <span class="keyword">return</span> -<span class="number">1</span>;</div><div class="line">  }</div></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Leetcode:_strStr_-_SUNDAY_algorithm">Leetcode: strStr - SUNDAY algorithm</h2>
+<!-- more --><br>Sunday algorithm is a variation of <a href="http://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm" target="_blank" rel="external">BM algorithm</a>, which is used broadly in string comparation, and is faster and easier than <a href="http://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm" target="_blank" rel="external">KMP algorithm</a>(usually 3-5 times!).<br>]]>
+    
+    </summary>
+    
+      <category term="leetcode" scheme="http://wangyifu.github.io/myblog/tags/leetcode/"/>
+    
+      <category term="algorithm" scheme="http://wangyifu.github.io/myblog/tags/algorithm/"/>
+    
+      <category term="learning" scheme="http://wangyifu.github.io/myblog/categories/learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Leetcode: Pow(X,n)]]></title>
+    <link href="http://wangyifu.github.io/myblog/2014/10/27/Leetcode-Pow-X-n/"/>
+    <id>http://wangyifu.github.io/myblog/2014/10/27/Leetcode-Pow-X-n/</id>
+    <published>2014-10-27T18:04:34.000Z</published>
+    <updated>2014-10-27T18:14:34.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Leetcode:_Pow(X,n)">Leetcode: Pow(X,n)</h2>
+<p>Naive thinking is just multiple X for n times, but this is absolutely not this question wants.</p>
+<p>We need to make use of the calculation result in previous steps, since <code>X^n = X^n/2 * X^n/2</code></p>
+<p>What if n is odd? Then we need to multiple X one more times.</p>
+<figure class="highlight Java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>{</div><div class="line">    <span class="keyword">public</span> <span class="keyword">double</span> <span class="title">pow</span>(<span class="keyword">double</span> x, <span class="keyword">int</span> n) {</div><div class="line">      <span class="keyword">double</span> result = <span class="number">1.0</span>;</div><div class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i = n; i != <span class="number">0</span>; i /= <span class="number">2</span>, x *= x) {</div><div class="line">          <span class="keyword">if</span>( i % <span class="number">2</span> != <span class="number">0</span> ) {</div><div class="line">              result *= x;</div><div class="line">          }</div><div class="line">      }</div><div class="line">      <span class="keyword">return</span> n &lt; <span class="number">0</span> ? <span class="number">1.0</span> / result : result;</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Leetcode:_Pow(X,n)">Leetcode: Pow(X,n)</h2>
+<p>Naive thinking is just multiple X for n times, but this is absolutely not this questi]]>
+    </summary>
+    
+      <category term="leetcode" scheme="http://wangyifu.github.io/myblog/tags/leetcode/"/>
+    
+      <category term="learning" scheme="http://wangyifu.github.io/myblog/categories/learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Building Vector Space Retrival Model Using UIMA]]></title>
+    <link href="http://wangyifu.github.io/myblog/2014/10/18/Building-Vector-Space-Retrival-Model-Using-UIMA/"/>
+    <id>http://wangyifu.github.io/myblog/2014/10/18/Building-Vector-Space-Retrival-Model-Using-UIMA/</id>
+    <published>2014-10-18T19:25:44.000Z</published>
+    <updated>2014-11-15T19:25:24.000Z</updated>
+    <content type="html"><![CDATA[<a id="more"></a><br># Task 2<br><br>This is the origin result of task 1. Our goal is to improve MRR as much as we can.<br><br><img src="/myblog/images/2014/Oct/origin_result.png"><br><br><a id="more"></a>
+
+<h2 id="Step_1-_Optimalizing_Tokenize_Algorithm">Step 1. Optimalizing Tokenize Algorithm</h2>
+<p>The origin tokenize algorithm just split sentence by spaces. This method will get some wrong results like below:</p>
+<blockquote>
+<p>world.<br>“Mendocino<br>Tree”<br>Lake?<br>Bernardino,<br>…</p>
+</blockquote>
+<p>In this case, the word “world.” in answer text will not match word “world” in query text. But actually they should be considerd as same.</p>
+<p>I updated this tokenize algorithm to reduce mismatch. Firstly, the sentence is converted to lower case and trimed. Then, I split words by many seperators rather than just blank using regular expression, which includes:</p>
+<blockquote>
+<p>! ? , . “ ; () [] {} &lt;&gt;   </p>
+</blockquote>
+<figure class="highlight java"><figcaption><span>Optimaized Tokenize Function</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">List&lt;String&gt; tokenize1(String doc) {</div><div class="line">  List&lt;String&gt; res = <span class="keyword">new</span> ArrayList&lt;String&gt;();</div><div class="line">  <span class="comment">//changing every word to lowercase to avoid mismatch</span></div><div class="line">  doc = doc.toLowerCase().trim();</div><div class="line">  String patternStr = <span class="string">"[\\s\\;\\(\\)\\[\\]\\{\\}\\&lt;\\&gt;\".,?!]+"</span>;</div><div class="line">  <span class="keyword">for</span> (String s: doc.split(patternStr)){</div><div class="line">    res.add(s);</div><div class="line">    System.out.println(s);</div><div class="line">  }</div><div class="line">  <span class="keyword">return</span> res;</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>Note there are still some exceptions:</p>
+<ul>
+<li>Comma: inside numbers like <strong>3,000,000</strong></li>
+<li>Period: Not for abbreviations: <strong>O.K.</strong> Not for URLs: <strong>www.google.com</strong></li>
+<li>Slash: Not for fractions: <strong>1/2</strong>. Not for URLS: <strong>www.google.com/search</strong></li>
+<li>…</li>
+</ul>
+<p>It is hard using regular expression to exclude all these exceptions. But by applying this method, the MMR score already has a signifiant improvment from 0.43 to 0.58. So I believe this approach maybe is good enough for this part. If we want our tokenize algorithm more precisely, we may need a dictionary of words, and some data structures like prefix tree and Trie.</p>
+<img src="/myblog/images/2014/Oct/updated_tokenize.png">
+
+<h2 id="Better_Stemming_Algorithm">Better Stemming Algorithm</h2>
+<p>In last part, we optimaized tokenize algorithm by applying multiple seperaters. However, there is still a problem: Our model can not distinguish different forms of same word. For example, it will treat <strong>“is”</strong>, <strong>“was”</strong> as different words. But actually these two words play the same role in sentence.</p>
+<p>We can use provided Stanford lemmatizer to solve this. Just call the <strong>stemWord(str)</strong> function before we add tokens to list.</p>
+<p>Here are some converted words:</p>
+<blockquote>
+<p>named, name<br>leading, lead<br>is, be<br>feet, foot<br>mcdonald’s,mcdonald’<br>…</p>
+</blockquote>
+<p>Last one seems not like a good conversion, so I modified a little to change <strong>“mcdonald’s”</strong> to <strong>“mcdonald”</strong>. This method improves MMR score from 0.58 to 0.70. Again, a remarkable progress.</p>
+<img src="/myblog/images/2014/Oct/updated_stemming.png">
+
+
+<h2 id="Apply_Some_Different_Similarity_Measurement">Apply Some Different Similarity Measurement</h2>
+<p>I did not know there are so many ways to <a href="http://en.wikipedia.org/wiki/String_metric" target="_blank" rel="external">evaluate string similarity</a> until this project.</p>
+<h4 id="Hamming_distance:"><strong>Hamming distance</strong>:</h4>
+<p>“ka<strong>rol</strong>in” and “ka<strong>thr</strong>in” is 3.</p>
+<h4 id="Levenshtein_distance_and_Damerau–Levenshtein_distance:"><strong>Levenshtein distance and Damerau–Levenshtein distance</strong>:</h4>
+<ol>
+<li>“<strong>k</strong>itten” →  “<strong>s</strong>itten” (substitution of “s” for “k”) </li>
+<li>“sittin” →  “sittin<strong>g</strong>“ (insertion of “g” at the end).  </li>
+</ol>
+<h4 id="Soundex_Distance_Metric:"><strong>Soundex Distance Metric</strong>:</h4>
+<p>   Mapping char to similar value if it sound alike: “Robert” and “Rupert” return the same string “R163” while “Rubin” yields “R150”.  </p>
+<h4 id="Jaccord_Coefficient:"><strong>Jaccord Coefficient</strong>:</h4>
+<p>   <a href="http://www.gees.ac.uk/resources/hosted/fieldsim/con_jaccard.htm" target="_blank" rel="external">link</a></p>
+<h4 id="Dice’s_coefficient:"><strong>Dice’s coefficient</strong>:</h4>
+<p>   For two word <code>night</code>, <code>nacht</code>:<br>   We would find the set of bigrams in each word:<br>   {<code>ni</code>,<code>ih</code>,<code>gh</code>,<code>ht</code>}<br>   {<code>na</code>,<code>ac</code>,<code>ch</code>,<code>ht</code>}<br>   Each set has four elements, and the intersection of these two sets has only one element: <code>ht</code>.<br>   Inserting these numbers into the formula. s = (2 · 1) / (4 + 4) = 0.25.  </p>
+<img src="/myblog/images/2014/Oct/dice_coefficient.png">
+
+<p>I firstly chose dice coefficient algorithm to calculate string similarity. However, from the result below, we can see that the MRR score reduces from 0.70 to 0.61. I had double checked the whole function, found nothing wrong. The probably reason is that optimized tokenlize algorithm and stemming algorithm helps cosine similiarly performs better than dice coefficient. So dice coefficient has nothing to do with last two steps’ optimization. This algorithm has a better performance than original cosine similiarly algorithm (MMR from 0.43 to 0.61). </p>
+<p>As the result, although cosine similiarity algorithm is somehow naive, it does not break the structure of token, which means it has a potential to optimize. Like using Stanford Lemmatizer to put differnet forms of same word into one category. However, if we using dice coefficient, although it breaks word into a smaller “grain size”, it also loses information of words, thus we can not optimize the performance from the meaning of words. So if we just want to compare two documents’ similarity, we may want to choose dice coefficient. But if we want to learn more from the meaning of sentence, we should keep the structure of tokens.</p>
+<img src="/myblog/images/2014/Oct/dice_coefficient_result.png">
+
+<p>Then, I usd Jaccord similarity. This method is easy to implement, just change a little from cosine similarity. We get pretty results from this method, MRR jumps from 0.70 to 0.82(see figure below). It is probably because this method is more precisely than cosine similarity, and it can benefit from other steps’ optimaztion, since it not break the structure of tokens.</p>
+<img src="/myblog/images/2014/Oct/jaccord_result.png">
+]]></content>
+    <summary type="html">
+    <![CDATA[<!-- more --><br># Task 2<br><br>This is the origin result of task 1. Our goal is to improve MRR as much as we can.<br><br><img src="/myblog/images/2014/Oct/origin_result.png"><br><br>]]>
+    
+    </summary>
+    
+      <category term="UIMA" scheme="http://wangyifu.github.io/myblog/tags/UIMA/"/>
+    
+      <category term="Java" scheme="http://wangyifu.github.io/myblog/tags/Java/"/>
+    
+      <category term="learning" scheme="http://wangyifu.github.io/myblog/categories/learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Learning Markdown]]></title>
+    <link href="http://wangyifu.github.io/myblog/2014/10/18/Learning-Markdown/"/>
+    <id>http://wangyifu.github.io/myblog/2014/10/18/Learning-Markdown/</id>
+    <published>2014-10-18T16:14:02.000Z</published>
+    <updated>2014-10-19T00:29:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Here_are_some_resources_for_learning_Markdown:">Here are some resources for learning Markdown:</h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Markdown#Syntax_examples" target="_blank" rel="external">Wikipedia</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank" rel="external">Markdown Here Cheatsheet</a></li>
+<li><a href="http://markdowntutorial.com/" target="_blank" rel="external">Markdown Tutorial</a></li>
+<li><a href="http://markdown-here.com/" target="_blank" rel="external">Markdown Here</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Here_are_some_resources_for_learning_Markdown:">Here are some resources for learning Markdown:</h2>
+<ul>
+<li><a href="http://en.wiki]]>
+    </summary>
+    
+      <category term="Markdown" scheme="http://wangyifu.github.io/myblog/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>
